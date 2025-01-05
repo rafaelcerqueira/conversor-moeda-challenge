@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ConversorMoedas conversor = new ConversorMoedas();
         int opcao;
-        double amount;
+        double quantia;
 
         do {
             System.out.println("*******************");
@@ -28,7 +28,7 @@ public class Main {
 
             if (opcao >=1 && opcao <=7) {
                 System.out.println("Informe o valor para conversao: ");
-                amount = scanner.nextInt();
+                quantia = scanner.nextInt();
                 switch (opcao) {
                     case 1:
                         conversor.converte("BRL", "USD");

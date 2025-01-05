@@ -8,6 +8,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.text.DecimalFormat;
 
 public class ConversorMoedas {
 
@@ -29,9 +30,12 @@ public class ConversorMoedas {
                 Gson gson = new Gson();
                 JsonObject json = gson.fromJson(responseBody, JsonObject.class);
                 double taxaConversao = json.get("conversion_rate").getAsDouble();
-                System.out.println("Taxa de conversao de " + deMoeda + " para " + paraMoeda + ": " + taxaConversao);
+                double quantiaConvertida = quantia * taxaConversao;
+
+                DecimalFormat df = DecimalFormat("#.##");
+                System.out.println("Valor convertido de " + quantia + " " + deMoeda + " para " + paraMoeda + ": " + df.format(quantiaConvertida));
             } else {
-                System.out.println("Erro na conexao com a API.");
+                System.out.println("Erro na conexao com a API. Codigo de sttatus: " + response.statusCode());
             }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
