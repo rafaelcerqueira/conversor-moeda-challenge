@@ -8,12 +8,11 @@ Este é um projeto de conversor de moedas simples em Java que utiliza a Exchange
   - Real (BRL) para Dólar (USD)
   - Dólar (USD) para Real (BRL)
   - Real (BRL) para Euro (EUR)
+  - Euro (EUR) para Real (BRL)
   - Real (BRL) para Peso Argentino (ARS)
   - Peso Argentino (ARS) para Real (BRL)
-  - Dólar (USD) para Peso Argentino (ARS)
-  - Peso Argentino (ARS) para Dólar (USD)
 - Permite ao usuário inserir o valor a ser convertido.
-- Exibe a taxa de conversão e o valor convertido.
+- Exibe o valor convertido.
 
 ## Requisitos
 
