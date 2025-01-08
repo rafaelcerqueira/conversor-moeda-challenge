@@ -19,8 +19,6 @@ public class Main {
             System.out.println("4 - Euro para Real");
             System.out.println("5 - Real para Peso Argentino");
             System.out.println("6 - Peso Argentino para Real");
-            System.out.println("7 - Peso Argentino para Dólar");
-            System.out.println("8 - Dólar para Peso Argentino");
             System.out.println("0 - Sair");
             System.out.println("-------------------------");
             System.out.print("Digite a opção desejada: ");
@@ -31,29 +29,24 @@ public class Main {
                 quantia = scanner.nextInt();
                 switch (opcao) {
                     case 1:
-                        conversor.converte("BRL", "USD");
+                        conversor.convert("BRL", "USD", quantia);
                         break;
                     case 2:
-                        conversor.converte("USD", "BRL");
+                        conversor.convert("USD", "BRL", quantia);
                         break;
                     case 3:
-                        conversor.converte("BRL", "EUR");
+                        conversor.convert("BRL", "EUR", quantia);
                         break;
                     case 4:
-                        conversor.converte("EUR", "BRL");
+                        conversor.convert("EUR", "BRL", quantia);
                         break;
                     case 5:
-                        conversor.converte("BRL", "ARS");
+                        conversor.convert("BRL", "ARS", quantia);
                         break;
                     case 6:
-                        conversor.converte("ARS", "BRL");
+                        conversor.convert("ARS", "BRL", quantia);
                         break;
-                    case 7:
-                        conversor.converte("ARS", "USD");
-                        break;
-                    case 8:
-                        conversor.converte("USD", "ARS");
-                        break;
+
                 }
             } else if (opcao == 0) {
                 System.out.println("Saindo...");
