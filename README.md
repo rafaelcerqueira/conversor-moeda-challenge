@@ -36,13 +36,15 @@ Este é um projeto de conversor de moedas simples em Java que utiliza a Exchange
 - A clsse **Config** irá acessar o arquivo api_key.txt e ler o seu conteúdo para que possa ser substituído na variável API_KEY.
 - Execute o projeto. 
   - Ao executar o programa, você verá um menu com as op~oes de conversão. Escolha a opção desejada. Em seguida, insira o valor que deseja converter. O programa deverá exivir o valor convertido.
-  ![img.png](img.png)
-  ![img_1.png](img_1.png)
-  ![img_2.png](img_2.png)
-  ![img_3.png](img_3.png)
+  1. ![img.png](img.png)
+  2. ![img_1.png](img_1.png)
+  3. ![img_2.png](img_2.png)
+  4. ![img_3.png](img_3.png)
+  
   - O programa rodará em loop. Digite a opção 0 para parar o programa. 
 
 **Licença**
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 **Autor**
 - @rafaelcerqueira
