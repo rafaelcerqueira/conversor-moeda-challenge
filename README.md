@@ -25,7 +25,7 @@ Este é um projeto de conversor de moedas simples em Java que utiliza a Exchange
 1. **Clone o repositório**:
 
    ```bash
-   git clone https://github.com/seu-usuario/conversor-de-moedas.git
+   git clone https://github.com/seu-usuario/conversor-moeda-challenge.git
    cd conversor-de-moedas
 
 ## Instruções de uso
