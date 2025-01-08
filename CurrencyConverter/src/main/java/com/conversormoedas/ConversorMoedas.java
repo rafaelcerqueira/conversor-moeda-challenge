@@ -15,10 +15,6 @@ public class ConversorMoedas {
     private static final String API_KEY = Config.getApiKey();
     private static final String API_URL = "https://v6.exchangerate-api.com/v6/";
 
-    static {
-        System.out.println("API Key: " + API_KEY);
-    }
-
     public void convert(String fromCurrency, String toCurrency, double amount) {
         String urlString = API_URL + API_KEY + "/pair/" + fromCurrency + "/" + toCurrency;
 
